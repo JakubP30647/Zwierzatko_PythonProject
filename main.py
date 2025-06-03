@@ -1,6 +1,7 @@
 import pygame
 
 from choice_screen import choice_screen
+from gameplay_screen import gameplay_screen
 from settings import *
 from mainMenu_screen import main_menu
 from settings_screen import settings_screen
@@ -17,6 +18,8 @@ def main():
             result = main_menu(screen)
         elif current_screen == "choice_screen":
             result = choice_screen(screen)
+        elif current_screen == "gameplay_screen":
+            result = gameplay_screen(screen)
         elif current_screen == "settings":
             result = settings_screen(screen)
         elif current_screen == "quit":

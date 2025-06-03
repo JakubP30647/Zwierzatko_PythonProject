@@ -1,6 +1,6 @@
 import pygame
 from settings import *
-from button import Button
+from widgets import Button
 
 
 def choice_screen(screen):
@@ -12,9 +12,7 @@ def choice_screen(screen):
         btn = Button(WIDTH // 2 - int(WIDTH * 0.07), (HEIGHT * 0.2) + i * 150, 350, 80, label, font)
         buttons.append(btn)
 
-
-
-    back_button = Button(WIDTH // 2 - int(WIDTH * 0.07), HEIGHT*0.9, 350, 80, "BACK", font)
+    back_button = Button(WIDTH // 2 - int(WIDTH * 0.07), HEIGHT * 0.9, 350, 80, "BACK", font)
 
     clock = pygame.time.Clock()
     running = True
@@ -41,7 +39,7 @@ def choice_screen(screen):
 
                 for i, btn in enumerate(buttons):
                     if btn.is_clicked(event.pos):
-                        return "main_menu"
+                        return "gameplay_screen"
 
         pygame.display.flip()
         clock.tick(60)

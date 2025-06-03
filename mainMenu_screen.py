@@ -1,7 +1,7 @@
 import pygame
 import sys
 from settings import *
-from button import Button, Slider
+from widgets import Button
 
 
 def main_menu(screen):

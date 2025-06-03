@@ -1,6 +1,9 @@
 import pygame
+
+import utils
 from settings import *
-from button import Button
+from utils import FUN
+from widgets import Button, Bar
 
 import pygame_widgets
 from pygame_widgets.slider import Slider
@@ -13,14 +16,19 @@ def settings_screen(screen):
 
     offset_x_FOOD = int(-1 * 0.12 * WIDTH)
     offset_y_FOOD = int(-1 * 0.22 * HEIGHT)
-    slider_Food = Slider(screen, WIDTH // 2 + offset_x_FOOD, HEIGHT // 2 + offset_y_FOOD, int(WIDTH * 0.234375), int(HEIGHT * 0.0173), min=0,
-                    max=100, step=1)
+    slider_Food = Slider(screen, WIDTH // 2 + offset_x_FOOD, HEIGHT // 2 + offset_y_FOOD, int(WIDTH * 0.234375), int(HEIGHT * 0.0173),
+                         min=0, max=100, step=1)
 
     offset_x_FUN = int(-1 * 0.12 * WIDTH)
     offset_y_FUN = int(-1 * 0.08 * HEIGHT)
     slider_Fun = Slider(screen, WIDTH // 2 + offset_x_FUN, HEIGHT // 2 + offset_y_FUN, int(WIDTH * 0.234375), int(HEIGHT * 0.0173),
-                    min=0,
-                    max=100, step=1)
+                    min=0, max=100, step=1)
+
+
+
+
+
+    clock = pygame.time.Clock()
 
     running = True
     while running:
@@ -37,13 +45,23 @@ def settings_screen(screen):
         title = font.render("Settings", True, BLACK)
         screen.blit(title, (WIDTH // 2 - title.get_width() // 2, 40))
 
-        # print(slider.getValue())
+
+
+
+
 
         food_text = font.render(f"Food: {slider_Food.getValue()}", True, BLACK)
         screen.blit(food_text, (WIDTH // 2 - food_text.get_width() // 2, int(HEIGHT * 0.228)))
 
+
+
         fun_text = font.render(f"Fun: {slider_Fun.getValue()}", True, BLACK)
+
+        utils.FUN = slider_Fun.getValue()
+        print(utils.FUN)
+
         screen.blit(fun_text, (WIDTH // 2 - fun_text.get_width() // 2, int(HEIGHT * 0.37)))
+
 
 
         back_button.draw(screen)
