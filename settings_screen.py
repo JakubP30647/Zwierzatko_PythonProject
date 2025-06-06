@@ -51,6 +51,9 @@ def settings_screen(screen):
 
 
         food_text = font.render(f"Food: {slider_Food.getValue()}", True, BLACK)
+
+        utils.FOOD = slider_Food.getValue()
+
         screen.blit(food_text, (WIDTH // 2 - food_text.get_width() // 2, int(HEIGHT * 0.228)))
 
 
