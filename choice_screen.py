@@ -2,17 +2,34 @@ import pygame
 from settings import *
 from widgets import Button
 
-
 def choice_screen(screen):
-    font = pygame.font.Font('assets/milk.ttf', 40)
+
+    font_size = int(HEIGHT * 0.037)
+    font = pygame.font.Font('assets/milk.ttf', font_size)
+
     buttons = []
     labels = ["Zwierze", "ZWIERZYNIEC", "ZwIeRzYsKo", "zwierz"]
 
     for i, label in enumerate(labels):
-        btn = Button(WIDTH // 2 - int(WIDTH * 0.07), (HEIGHT * 0.2) + i * 150, 350, 80, label, font)
+
+        btn = Button(
+            WIDTH * 0.5 - WIDTH * 0.07,                 # środek ekranu - offset
+            HEIGHT * 0.2 + i * (HEIGHT * 0.139),
+            WIDTH * 0.182,
+            HEIGHT * 0.074,
+            label,
+            font
+        )
         buttons.append(btn)
 
-    back_button = Button(WIDTH // 2 - int(WIDTH * 0.07), HEIGHT * 0.9, 350, 80, "BACK", font)
+    back_button = Button(
+        WIDTH * 0.5 - WIDTH * 0.07,
+        HEIGHT * 0.9,
+        WIDTH * 0.182,
+        HEIGHT * 0.074,
+        "BACK",
+        font
+    )
 
     clock = pygame.time.Clock()
     running = True
@@ -20,9 +37,10 @@ def choice_screen(screen):
     while running:
         screen.fill(PINK)
 
-        title_font = pygame.font.Font('assets/milk.ttf', 50)
+
+        title_font = pygame.font.Font('assets/milk.ttf', int(HEIGHT * 0.046))
         title = title_font.render("Wybierz:", True, BLACK)
-        screen.blit(title, (screen.get_width() // 2 - title.get_width() // 2, 30))
+        screen.blit(title, (screen.get_width() // 2 - title.get_width() // 2, HEIGHT * 0.028))
 
         for btn in buttons:
             btn.draw(screen)
@@ -33,10 +51,8 @@ def choice_screen(screen):
             if event.type == pygame.QUIT:
                 return "main_menu"
             elif event.type == pygame.MOUSEBUTTONDOWN:
-
                 if back_button.is_clicked(event.pos):
                     return "main_menu"
-
                 for i, btn in enumerate(buttons):
                     if btn.is_clicked(event.pos):
                         return "gameplay_screen"

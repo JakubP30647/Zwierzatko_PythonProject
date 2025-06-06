@@ -10,9 +10,10 @@ from pygame_widgets.slider import Slider
 
 
 def settings_screen(screen):
-    font = pygame.font.Font('assets/milk.ttf', 45)
-    back_button = Button(0, 0, 250, 60, "Back", font)
-    back_button.center(offset_y=200)
+    font = pygame.font.Font('assets/milk.ttf', int(HEIGHT * 0.042))
+
+    back_button = Button(0, 0, WIDTH * 0.13, HEIGHT * 0.056, "Back", font)
+    back_button.center(offset_y=HEIGHT * 0.185)  # 200 / 1080 ≈ 0.185
 
     offset_x_FOOD = int(-1 * 0.12 * WIDTH)
     offset_y_FOOD = int(-1 * 0.22 * HEIGHT)
@@ -23,8 +24,6 @@ def settings_screen(screen):
     offset_y_FUN = int(-1 * 0.08 * HEIGHT)
     slider_Fun = Slider(screen, WIDTH // 2 + offset_x_FUN, HEIGHT // 2 + offset_y_FUN, int(WIDTH * 0.234375), int(HEIGHT * 0.0173),
                     min=0, max=100, step=1)
-
-
 
 
 
@@ -43,9 +42,7 @@ def settings_screen(screen):
         screen.fill(PINK)
 
         title = font.render("Settings", True, BLACK)
-        screen.blit(title, (WIDTH // 2 - title.get_width() // 2, 40))
-
-
+        screen.blit(title, (WIDTH // 2 - title.get_width() // 2,HEIGHT * 0.037))
 
 
 
