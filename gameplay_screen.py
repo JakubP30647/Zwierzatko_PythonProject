@@ -1,17 +1,25 @@
 import random
 import sys
+import pygame.transform
 
 import utils
 from settings import *
 from utils import FUN
 from widgets import *
 
-def gameplay_screen(screen):
+# Stałe dla rozmiaru królika
+PET_WIDTH = int(WIDTH * 0.05)
+PET_HEIGHT = int(HEIGHT * 0.08)
 
+
+def gameplay_screen(screen):
     font = pygame.font.Font('assets/milk.ttf', int(HEIGHT * 0.037))
 
     loveImg = pygame.image.load('assets/love.png')
     loveList = []
+
+    petImg = pygame.image.load('assets/rabbit/Idle.png')
+    pet = PetEntity(WIDTH * 0.5, HEIGHT * 0.5, petImg)
 
     back_button = Button(WIDTH * 0.8, HEIGHT * 0.9, WIDTH * 0.15, HEIGHT * 0.052, "BACK", font)
     petButton = Button(WIDTH * 0.20, HEIGHT * 0.9, WIDTH * 0.15, HEIGHT * 0.052, "PET", font)
@@ -33,35 +41,49 @@ def gameplay_screen(screen):
     last_drop_time_fun = 0
     last_drop_time_food = 0
 
+    pet_dx = 1
+    last_direction_change = pygame.time.get_ticks()
+    last_standing = pygame.time.get_ticks()
+    direction_change_interval = 6000
+    timeOfStand = 5000
+    walking = False
     clock = pygame.time.Clock()
-
     running = True
+
     while running:
         screen.blit(background, (0, 0))
         clock.tick(60)
         currentTime = pygame.time.get_ticks()
 
-        for x in loveList:
-            if len(loveList) > 0:
-                if abs(x.x - WIDTH / 2) <= WIDTH * 0.1 and abs(x.y - HEIGHT / 2) <= HEIGHT * 0.1:
-                    loveList.remove(x)
-                    break
+        standingTimer = pygame.time.get_ticks()
 
-                if x.x < WIDTH / 2:
-                    x.x += WIDTH * 0.00156  # 3px = 3 / 1920
-                else:
-                    x.x -= WIDTH * 0.00156
+        if funBar.ratio < 1 or foodBar.ratio < 1:
+            print("KONIEC GRY")
 
-                if x.y < HEIGHT / 2:
-                    x.y += HEIGHT * 0.00278  # 3px = 3 / 1080
-                else:
-                    x.y -= HEIGHT * 0.00278
+        if currentTime - last_direction_change > direction_change_interval:
+            pet_dx = random.choice([-1, 1])
+            last_direction_change = currentTime
 
-        for x in loveList:
-            x.draw(screen)
+        if standingTimer - last_standing > timeOfStand:
+            walking = not walking
+            last_standing = standingTimer
+
+        if walking:
+            if pet_dx > 0 and pet.x < WIDTH * 0.8:
+                pet.x += pet_dx
+            if pet_dx < 0 and pet.x > WIDTH * 0.2:
+                pet.x += pet_dx
+
+        for heart in loveList[:]:
+            heart.move_towards(pet.x, pet.y)
+            if pet.get_rect().colliderect(heart.get_rect()):
+                loveList.remove(heart)
+            else:
+                heart.draw(screen)
 
         if currentTime - last_drop_time_fun > 1000:
             funBar.ratio -= 1
+
             last_drop_time_fun = currentTime
 
         if currentTime - last_drop_time_food > 750:
@@ -75,6 +97,8 @@ def gameplay_screen(screen):
         foodButton.draw(screen)
         back_button.draw(screen)
 
+        pet.draw(screen)
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
@@ -86,8 +110,8 @@ def gameplay_screen(screen):
                     riseRatio(funBar)
                     loveList.append(
                         LoveEntity(
-                            random.randint(0, int(WIDTH * 0.26)),  # 500 / 1920 = 0.26
-                            random.randint(0, int(HEIGHT * 0.46)),  # 500 / 1080 = 0.46
+                            random.randint(0, int(WIDTH * 0.99)),
+                            random.randint(0, int(HEIGHT * 0.99)),
                             loveImg
                         )
                     )
@@ -101,8 +125,8 @@ def gameplay_screen(screen):
                     riseRatio(funBar)
                     loveList.append(
                         LoveEntity(
-                            random.randint(0, int(WIDTH * 0.26)),
-                            random.randint(0, int(HEIGHT * 0.46)),
+                            random.randint(0, int(WIDTH * 0.99)),
+                            random.randint(0, int(HEIGHT * 0.99)),
                             loveImg
                         )
                     )
@@ -118,16 +142,45 @@ def gameplay_screen(screen):
 def riseRatio(bar):
     if bar.ratio < 90:
         bar.ratio += 10
-    elif bar.ratio >= 0:
+    else:
         bar.ratio += 100 - bar.ratio
 
 
 class LoveEntity:
-
     def __init__(self, x, y, image):
         self.x = x
         self.y = y
         self.image = image
+        self.speed = 3
 
     def draw(self, screen):
         screen.blit(self.image, (self.x, self.y))
+
+    def get_rect(self):
+        return pygame.Rect(self.image.get_rect(center=(self.x, self.y)))
+
+    def move_towards(self, target_x, target_y):
+        dx = target_x - self.x
+        dy = target_y - self.y
+        distance = (dx ** 2 + dy ** 2) ** 0.5
+
+        if distance != 0:
+            dx /= distance
+            dy /= distance
+            self.x += dx * self.speed
+            self.y += dy * self.speed
+
+
+class PetEntity:
+    def __init__(self, x, y, image):
+        self.x = x
+        self.y = y
+
+        self.image = pygame.transform.scale(image, (PET_WIDTH, PET_HEIGHT))
+
+    def get_rect(self):
+        return pygame.Rect(self.image.get_rect(center=(self.x, self.y)))
+
+    def draw(self, screen):
+        screen.blit(self.image,
+                    (self.image.get_rect(center=(self.x, self.y)).x, self.image.get_rect(center=(self.x, self.y)).y))
