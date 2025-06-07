@@ -7,19 +7,23 @@ from settings import *
 from utils import FUN
 from widgets import *
 
-# Stałe dla rozmiaru królika
-PET_WIDTH = int(WIDTH * 0.05)
-PET_HEIGHT = int(HEIGHT * 0.08)
+
 
 
 def gameplay_screen(screen):
     font = pygame.font.Font('assets/milk.ttf', int(HEIGHT * 0.037))
 
+
+
     loveImg = pygame.image.load('assets/love.png')
     loveList = []
 
-    petImg = pygame.image.load('assets/rabbit/Idle.png')
-    pet = PetEntity(WIDTH * 0.5, HEIGHT * 0.5, petImg)
+    foodImg = pygame.image.load('assets/food.png')
+    foodList = []
+
+
+    petIdleImg = pygame.image.load('assets/rabbit/Idle.png')
+    pet = PetEntity(WIDTH * 0.5, HEIGHT * 0.5, petIdleImg)
 
     back_button = Button(WIDTH * 0.8, HEIGHT * 0.9, WIDTH * 0.15, HEIGHT * 0.052, "BACK", font)
     petButton = Button(WIDTH * 0.20, HEIGHT * 0.9, WIDTH * 0.15, HEIGHT * 0.052, "PET", font)
@@ -45,7 +49,7 @@ def gameplay_screen(screen):
     last_direction_change = pygame.time.get_ticks()
     last_standing = pygame.time.get_ticks()
     direction_change_interval = 6000
-    timeOfStand = 5000
+    timeOfStand = 3000
     walking = False
     clock = pygame.time.Clock()
     running = True
@@ -62,6 +66,19 @@ def gameplay_screen(screen):
 
         if currentTime - last_direction_change > direction_change_interval:
             pet_dx = random.choice([-1, 1])
+            if pet_dx < 0 and pet.frameSide == "right":
+                print("robie LEFT")
+                for i in range(len(pet.running_frames)):
+                    pet.running_frames[i] = pygame.transform.flip(pet.running_frames[i], True, False)
+                pet.image = pygame.transform.flip(pet.image, True, False)
+                pet.frameSide = "left"
+
+            elif pet_dx > 0 and pet.frameSide == "left":
+                for i in range(len(pet.running_frames)):
+                    pet.running_frames[i] = pygame.transform.flip(pet.running_frames[i], True, False)
+                pet.image = pygame.transform.flip(pet.image, True, False)
+                pet.frameSide = "right"
+
             last_direction_change = currentTime
 
         if standingTimer - last_standing > timeOfStand:
@@ -74,16 +91,39 @@ def gameplay_screen(screen):
             if pet_dx < 0 and pet.x > WIDTH * 0.2:
                 pet.x += pet_dx
 
+        pet.update(walking)
+
         for heart in loveList[:]:
             heart.move_towards(pet.x, pet.y)
             if pet.get_rect().colliderect(heart.get_rect()):
+
+                pet.PET_HEIGHT += 2
+                pet.PET_WIDTH += 3
+                pet.refresh(petIdleImg)
                 loveList.remove(heart)
+
+
             else:
                 heart.draw(screen)
 
+        for food in foodList[:]:
+            food.move_towards(pet.x, pet.y)
+            if pet.get_rect().colliderect(food.get_rect()):
+
+                pet.PET_HEIGHT += 2
+                pet.PET_WIDTH += 3
+                pet.refresh(petIdleImg)
+                foodList.remove(food)
+
+
+            else:
+                food.draw(screen)
+
+
+
+
         if currentTime - last_drop_time_fun > 1000:
             funBar.ratio -= 1
-
             last_drop_time_fun = currentTime
 
         if currentTime - last_drop_time_food > 750:
@@ -109,13 +149,21 @@ def gameplay_screen(screen):
                 if petButton.is_clicked(event.pos):
                     riseRatio(funBar)
                     loveList.append(
-                        LoveEntity(
+                        PropEntity(
                             random.randint(0, int(WIDTH * 0.99)),
                             random.randint(0, int(HEIGHT * 0.99)),
                             loveImg
                         )
                     )
                 if foodButton.is_clicked(event.pos):
+                    foodList.append(
+                        PropEntity(
+                            random.randint(0, int(WIDTH * 0.99)),
+                            random.randint(0, int(HEIGHT * 0.99)),
+                            pygame.transform.scale(foodImg, (WIDTH * 0.15, HEIGHT * 0.18)).convert_alpha()
+                        )
+                    )
+
                     riseRatio(foodBar)
 
             elif event.type == pygame.KEYDOWN:
@@ -124,7 +172,7 @@ def gameplay_screen(screen):
                 if event.key == pygame.K_SPACE:
                     riseRatio(funBar)
                     loveList.append(
-                        LoveEntity(
+                        PropEntity(
                             random.randint(0, int(WIDTH * 0.99)),
                             random.randint(0, int(HEIGHT * 0.99)),
                             loveImg
@@ -132,6 +180,13 @@ def gameplay_screen(screen):
                     )
                 if event.key == pygame.K_e:
                     riseRatio(foodBar)
+                    foodList.append(
+                        PropEntity(
+                            random.randint(0, int(WIDTH * 0.99)),
+                            random.randint(0, int(HEIGHT * 0.99)),
+                            pygame.transform.scale(foodImg, (WIDTH * 0.15, HEIGHT * 0.18)).convert_alpha()
+                        )
+                    )
 
         pygame.display.flip()
 
@@ -146,7 +201,7 @@ def riseRatio(bar):
         bar.ratio += 100 - bar.ratio
 
 
-class LoveEntity:
+class PropEntity:
     def __init__(self, x, y, image):
         self.x = x
         self.y = y
@@ -172,15 +227,58 @@ class LoveEntity:
 
 
 class PetEntity:
-    def __init__(self, x, y, image):
+    def __init__(self, x, y, idle_image):
         self.x = x
         self.y = y
 
-        self.image = pygame.transform.scale(image, (PET_WIDTH, PET_HEIGHT))
+        self.current_frame = 0
+        self.animation_speed = 0.15
+        self.animation_timer = 0
+        self.frameSide = "right"
+        self.PET_WIDTH = int(WIDTH * 0.05)
+        self.PET_HEIGHT = int(HEIGHT * 0.08)
+        self.idle_image = pygame.transform.scale(idle_image, (self.PET_WIDTH, self.PET_HEIGHT)).convert_alpha()
+
+        self.running_frames = []
+        for i in range(7):
+            frame = pygame.image.load(f'assets/rabbit/{str(i).zfill(2)}_Running.png').convert_alpha()
+            frame = pygame.transform.scale(frame, (self.PET_WIDTH, self.PET_HEIGHT))
+            self.running_frames.append(frame)
+
+        self.image = self.idle_image.convert_alpha()
+
+    def update(self, walking):
+
+
+        if walking:
+
+
+            self.animation_timer += self.animation_speed
+
+            if self.animation_timer >= 1:
+                self.animation_timer = 0
+                self.current_frame = (self.current_frame + 1) % len(self.running_frames)
+            self.image = self.running_frames[self.current_frame]
+        else:
+            self.image = self.idle_image
 
     def get_rect(self):
         return pygame.Rect(self.image.get_rect(center=(self.x, self.y)))
 
     def draw(self, screen):
+
+        print(self.image.get_width(), self.image.get_height())
         screen.blit(self.image,
-                    (self.image.get_rect(center=(self.x, self.y)).x, self.image.get_rect(center=(self.x, self.y)).y))
+                    (self.image.get_rect(center=(self.x, self.y)).x,
+                     self.image.get_rect(center=(self.x, self.y)).y))
+
+    def refresh(self, img):
+        self.idle_image = pygame.transform.scale(img, (self.PET_WIDTH, self.PET_HEIGHT))
+
+        self.running_frames = []
+        for i in range(7):
+            frame = pygame.image.load(f'assets/rabbit/{str(i).zfill(2)}_Running.png').convert_alpha()
+            frame = pygame.transform.scale(frame, (self.PET_WIDTH, self.PET_HEIGHT))
+            if self.frameSide == "left":
+                frame = pygame.transform.flip(frame, True, False).convert_alpha()
+            self.running_frames.append(frame)
