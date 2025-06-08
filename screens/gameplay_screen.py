@@ -137,8 +137,8 @@ def gameplay_screen(screen):
             if pygame.time.get_ticks() - death_animation_start_time < DEATH_ANIMATION_DURATION:
                 deathGif.render(screen,
                                 (
-                                    (pet.currentVisiableImg.get_rect(center=(pet.x, pet.y)).x - WIDTH * 0.15),
-                                    (pet.currentVisiableImg.get_rect(center=(pet.x, pet.y)).y) - HEIGHT * 0.3)
+                                    (pet.currentVisiableImg.get_rect(center=(pet.x, pet.y)).x ),
+                                    (pet.currentVisiableImg.get_rect(center=(pet.x, pet.y)).y) )
                                 )
             else:
                 death_animation_start_time = None

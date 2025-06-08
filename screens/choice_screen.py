@@ -11,7 +11,7 @@ def choice_screen(screen):
     font = pygame.font.Font('assets/milk.ttf', font_size)
 
     buttons = []
-    labels = ["Rabbit", "HEADGEHOG", "beer", "zwierz"]
+    labels = ["Rabbit", "HEADGEHOG", "boar", "fox"]
 
     for i, label in enumerate(labels):
 
@@ -67,9 +67,12 @@ def choice_screen(screen):
                             case "HEADGEHOG":
                                 utils.set_pet_data("hedgehog", 5)
                                 print("CHANGE HEADGEHOG")
-                            case "beer":
-                                utils.set_pet_data("beer", 3)
+                            case "boar":
+                                utils.set_pet_data("boar", 3)
                                 print("CHANGE SARENKA")
+                            case "fox":
+                                utils.set_pet_data("fox", 3)
+                                print("CHANGE FOX")
 
 
                         return "gameplay_screen"

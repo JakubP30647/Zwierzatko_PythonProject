@@ -28,6 +28,6 @@ def foodInstall():
             try:
                 image = pygame.image.load(full_path).convert_alpha()
                 foodList.append(image)
-                print(f"Loaded: {filename}")
+
             except pygame.error as e:
                 print(f"Could not load {filename}: {e}")
