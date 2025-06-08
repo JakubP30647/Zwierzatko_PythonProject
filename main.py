@@ -1,10 +1,8 @@
-import pygame
-
-from choice_screen import choice_screen
-from gameplay_screen import gameplay_screen
+from screens.choice_screen import choice_screen
+from screens.gameplay_screen import gameplay_screen
 from settings import *
-from mainMenu_screen import main_menu
-from settings_screen import settings_screen
+from screens.mainMenu_screen import main_menu
+from screens.settings_screen import settings_screen
 
 def main():
     pygame.init()
