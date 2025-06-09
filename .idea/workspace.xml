@@ -4,13 +4,264 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb642909-abc0-4ab6-9616-5a72de19d00a" name="Changes" comment="Jest ciężko, commit wszystkiego">
+    <list default="true" id="61b1ade0-8103-4f00-a5ad-ef3cc15a166c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/make.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Minecraft.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/boar/00_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/boar/01_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/boar/02_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/boar/03_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/boar/Idle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/death.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/American_cheese_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/bacon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/banana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/barbeque_sauce.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/bell_pepper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/bell_pepper_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/bubble_gum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/butter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/butter2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/cabbage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/cabbage_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/candy_bar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/cereal1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/cereal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/coffee_bag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/cookies.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/cooking_oil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/dry_dog_food.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/egg_box.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/egg_brown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/egg_brown_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/egg_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/egg_white_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/energy_bar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/fish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/fish_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/flour.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/fruit_cocktail_can.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/grape_soda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/green_apple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/green_apple_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/green_grape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/green_grape_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/hot_cocoa_mix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/jam_strawberry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/ketchup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/marshmallows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/meat1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/meat1_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/meat2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/meat2_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/milk_bottle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/milk_chocolate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/milk_gallon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/milk_pack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/milk_plastic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/mushroom_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/mushroom_white_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/mustard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/olive_oil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/orange_juice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/peanut_butter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/plain_yogurt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/potato.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/potato_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/potatochip_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/potatochip_green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/potatochip_yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/red_apple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/red_apple_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/red_grape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/red_grape_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/salmon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/salmon_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/salt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/sausage_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/sliced_bread_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/snack1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/snack2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/soft_drink_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/soft_drink_green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/soft_drink_red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/soft_drink_yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/strawberry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/strawberry_ice_cream.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/strawberry_jam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/strawberry_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/sugar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/tuna_can.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/vanilla_or_lemon_ice_cream.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/water.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/watermelon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/watermelon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/white_cheese.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/white_cheese_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/white_cheese_piece.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/food/white_cheese_piece_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fox/00_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fox/01_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fox/02_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fox/03_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fox/Idle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/hedgehog/00_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/hedgehog/01_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/hedgehog/02_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/hedgehog/03_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/hedgehog/04_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/hedgehog/05_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/hedgehog/Idle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/love.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/milk.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/rabbit/00_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/rabbit/01_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/rabbit/02_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/rabbit/03_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/rabbit/04_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/rabbit/05_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/rabbit/06_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/rabbit/07_Running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/rabbit/Idle.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Zwierzatko_PythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Zwierzatko_PythonProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/choice_screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/screens/choice_screen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/gameplay_screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/screens/gameplay_screen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetEntity.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PetEntity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PropEntity.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PropEntity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Minecraft.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/Minecraft.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/boar/00_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/boar/00_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/boar/01_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/boar/01_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/boar/02_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/boar/02_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/boar/03_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/boar/03_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/boar/Idle.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/boar/Idle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/death.gif" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/death.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/American_cheese_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/American_cheese_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/bacon.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/bacon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/banana.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/banana.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/barbeque_sauce.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/barbeque_sauce.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/bell_pepper.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/bell_pepper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/bell_pepper_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/bell_pepper_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/bubble_gum.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/bubble_gum.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/butter.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/butter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/butter2.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/butter2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/cabbage.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/cabbage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/cabbage_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/cabbage_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/candy_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/candy_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/cereal1.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/cereal1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/cereal2.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/cereal2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/coffee_bag.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/coffee_bag.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/cookies.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/cookies.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/cooking_oil.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/cooking_oil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/dry_dog_food.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/dry_dog_food.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/egg_box.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/egg_box.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/egg_brown.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/egg_brown.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/egg_brown_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/egg_brown_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/egg_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/egg_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/egg_white_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/egg_white_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/energy_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/energy_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/fish.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/fish.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/fish_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/fish_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/flour.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/flour.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/fruit_cocktail_can.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/fruit_cocktail_can.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/grape_soda.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/grape_soda.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/green_apple.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/green_apple.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/green_apple_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/green_apple_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/green_grape.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/green_grape.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/green_grape_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/green_grape_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/hot_cocoa_mix.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/hot_cocoa_mix.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/jam_strawberry.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/jam_strawberry.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/ketchup.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/ketchup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/marshmallows.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/marshmallows.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/meat1.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/meat1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/meat1_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/meat1_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/meat2.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/meat2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/meat2_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/meat2_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/milk_bottle.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/milk_bottle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/milk_chocolate.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/milk_chocolate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/milk_gallon.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/milk_gallon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/milk_pack.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/milk_pack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/milk_plastic.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/milk_plastic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/mushroom_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/mushroom_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/mushroom_white_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/mushroom_white_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/mustard.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/mustard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/olive_oil.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/olive_oil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/orange_juice.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/orange_juice.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/peanut_butter.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/peanut_butter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/plain_yogurt.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/plain_yogurt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/potato.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/potato.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/potato_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/potato_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/potatochip_blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/potatochip_blue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/potatochip_green.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/potatochip_green.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/potatochip_yellow.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/potatochip_yellow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/red_apple.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/red_apple.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/red_apple_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/red_apple_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/red_grape.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/red_grape.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/red_grape_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/red_grape_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/salmon.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/salmon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/salmon_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/salmon_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/salt.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/salt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/sausage_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/sausage_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/sliced_bread_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/sliced_bread_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/snack1.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/snack1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/snack2.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/snack2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/soft_drink_blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/soft_drink_blue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/soft_drink_green.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/soft_drink_green.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/soft_drink_red.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/soft_drink_red.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/soft_drink_yellow.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/soft_drink_yellow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/strawberry.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/strawberry.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/strawberry_ice_cream.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/strawberry_ice_cream.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/strawberry_jam.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/strawberry_jam.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/strawberry_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/strawberry_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/sugar.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/sugar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/tuna_can.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/tuna_can.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/vanilla_or_lemon_ice_cream.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/vanilla_or_lemon_ice_cream.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/water.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/water.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/watermelon1.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/watermelon1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/watermelon2.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/watermelon2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/white_cheese.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/white_cheese.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/white_cheese_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/white_cheese_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/white_cheese_piece.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/white_cheese_piece.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food/white_cheese_piece_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/food/white_cheese_piece_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fox/00_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/fox/00_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fox/01_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/fox/01_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fox/02_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/fox/02_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fox/03_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/fox/03_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fox/Idle.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/fox/Idle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/hedgehog/00_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/hedgehog/00_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/hedgehog/01_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/hedgehog/01_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/hedgehog/02_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/hedgehog/02_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/hedgehog/03_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/hedgehog/03_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/hedgehog/04_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/hedgehog/04_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/hedgehog/05_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/hedgehog/05_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/hedgehog/Idle.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/hedgehog/Idle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/love.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/love.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/milk.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/milk.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/rabbit/00_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/rabbit/00_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/rabbit/01_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/rabbit/01_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/rabbit/02_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/rabbit/02_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/rabbit/03_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/rabbit/03_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/rabbit/04_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/rabbit/04_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/rabbit/05_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/rabbit/05_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/rabbit/06_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/rabbit/06_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/rabbit/07_Running.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/rabbit/07_Running.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/rabbit/Idle.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/rabbit/Idle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/choice_screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/choice_screen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_over_screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_over_screen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gameplay_screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameplay_screen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainMenu_screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainMenu_screen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings_screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings_screen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,45 +291,73 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="2xh2uu6ysuiJ9cM81AJc6iI7vo1" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2yH0khofX4UZklgzkGQMWjs2gGD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kubap/PycharmProjects/Zwierzatko_PythonProject/assets/beer&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
+    "Python docs.Docutils Task in src.rst.executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.choice_screen.executor": "Run",
+    "Python.conf.executor": "Run",
+    "Python.game_over_screen.executor": "Run",
+    "Python.gameplay_screen.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/kubap/Desktop/TU_ROBIE_PYTHON/Zwierzatko_PythonProject/docs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kubap\PycharmProjects\Zwierzatko_PythonProject\assets\beer" />
-      <recent name="C:\Users\kubap\PycharmProjects\Zwierzatko_PythonProject\assets" />
+      <recent name="C:\Users\kubap\Desktop\TU_ROBIE_PYTHON\Zwierzatko_PythonProject\docs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\kubap\Desktop\PYTON PROJECT\assets" />
-      <recent name="C:\Users\kubap\PycharmProjects\Zwierzatko_PythonProject\assets\sarenka" />
-      <recent name="C:\Users\kubap\PycharmProjects\Zwierzatko_PythonProject\assets" />
-      <recent name="C:\Users\kubap\PycharmProjects\Zwierzatko_PythonProject\assets\hedgehog" />
-      <recent name="C:\Users\kubap\PycharmProjects\Zwierzatko_PythonProject\screens" />
+      <recent name="C:\Users\kubap\Desktop\TU_ROBIE_PYTHON\Zwierzatko_PythonProject\docs\source" />
+      <recent name="C:\Users\kubap\Desktop\TU_ROBIE_PYTHON\Zwierzatko_PythonProject\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Zwierzatko_PythonProject/docs/build/html/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="conf" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Zwierzatko_PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/docs/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docs/source/conf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Zwierzatko_PythonProject" />
       <option name="ENV_FILES" value="" />
@@ -88,12 +367,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,6 +384,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Python.conf" />
       </list>
     </recent_temporary>
   </component>
@@ -119,80 +400,25 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fb642909-abc0-4ab6-9616-5a72de19d00a" name="Changes" comment="" />
-      <created>1748376210629</created>
+      <changelist id="61b1ade0-8103-4f00-a5ad-ef3cc15a166c" name="Changes" comment="" />
+      <created>1749476336536</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1748376210629</updated>
-      <workItem from="1748376211704" duration="13876000" />
-      <workItem from="1748421400013" duration="1937000" />
-      <workItem from="1748435900394" duration="42000" />
-      <workItem from="1748438943477" duration="2154000" />
-      <workItem from="1748713497076" duration="93000" />
-      <workItem from="1748986987672" duration="5726000" />
-      <workItem from="1749041732785" duration="8763000" />
-      <workItem from="1749238896804" duration="15874000" />
-      <workItem from="1749294365902" duration="23726000" />
-      <workItem from="1749403321556" duration="1005000" />
-      <workItem from="1749406451761" duration="463000" />
-      <workItem from="1749424323151" duration="1687000" />
+      <updated>1749476336536</updated>
+      <workItem from="1749476338360" duration="59000" />
+      <workItem from="1749476398395" duration="13791000" />
     </task>
-    <task id="LOCAL-00001" summary="FIRST">
-      <option name="closed" value="true" />
-      <created>1748376690392</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1748376690392</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Nocny Commit &lt;3">
-      <option name="closed" value="true" />
-      <created>1748390027493</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1748390027493</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Kolejny commit ile jeszcze tego mi zostalo :(">
-      <option name="closed" value="true" />
-      <created>1749242529979</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1749242529979</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Przy tym commicie straciłem wiare w siebie chcialbym go przeczytac za 5 lat zeby wiedziec czy bylo warto">
-      <option name="closed" value="true" />
-      <created>1749258351904</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1749258351904</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Jest ciężko, commit wszystkiego">
-      <option name="closed" value="true" />
-      <created>1749304639301</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1749304639302</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="FIRST" />
-    <MESSAGE value="Nocny Commit &lt;3" />
-    <MESSAGE value="Kolejny commit ile jeszcze tego mi zostalo :(" />
-    <MESSAGE value="Przy tym commicie straciłem wiare w siebie chcialbym go przeczytac za 5 lat zeby wiedziec czy bylo warto" />
-    <MESSAGE value="Jest ciężko, commit wszystkiego" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jest ciężko, commit wszystkiego" />
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Zwierzatko_PythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1749354816865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PYTON_PROJECT$main.coverage" NAME="main Coverage Results" MODIFIED="1749425551636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Zwierzatko_PythonProject$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1749477008500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Zwierzatko_PythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1749491209013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Zwierzatko_PythonProject$game_over_screen.coverage" NAME="game_over_screen Coverage Results" MODIFIED="1749481213258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Zwierzatko_PythonProject$gameplay_screen.coverage" NAME="gameplay_screen Coverage Results" MODIFIED="1749484095534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Zwierzatko_PythonProject$choice_screen.coverage" NAME="choice_screen Coverage Results" MODIFIED="1749479349285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Zwierzatko_PythonProject$conf.coverage" NAME="conf Coverage Results" MODIFIED="1749485727478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/docs/source" />
   </component>
 </project>
