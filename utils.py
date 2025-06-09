@@ -1,10 +1,8 @@
 import os
-from datetime import time
 
 import pygame
 
-from screens.game_over_screen import game_over_screen
-from settings import WIDTH, HEIGHT
+from settings import HEIGHT
 
 FUN = 50
 FOOD = 50

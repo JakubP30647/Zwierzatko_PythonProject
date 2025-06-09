@@ -1,7 +1,4 @@
-import pygame
-
 import utils
-from PetsAndUtilities.PetEntity import PetEntity
 from settings import *
 from widgets import Button
 

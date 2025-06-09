@@ -4,11 +4,9 @@ import pygame.transform
 from gif_pygame import gif_pygame
 
 import utils
-from PetsAndUtilities.PetEntity import PetEntity
-from PetsAndUtilities.PropEntity import PropEntity
-from screens.game_over_screen import game_over_screen
-from settings import *
-from utils import FUN
+from PetEntity import PetEntity
+from PropEntity import PropEntity
+from game_over_screen import game_over_screen
 from widgets import *
 
 
